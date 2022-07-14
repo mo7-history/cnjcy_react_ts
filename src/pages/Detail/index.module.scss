@@ -1,0 +1,141 @@
+@import "~@/assets/style/global.scss";
+
+.wrapper {
+  background-color: #f3f3f3;
+  color: #444444;
+}
+.ContentBox {
+  padding: px(10) px(15);
+  & > .title {
+    font-size: px(16);
+    color: #333333;
+    letter-spacing: 0;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    padding-bottom: px(10);
+    font-weight: bold;
+    .line {
+      display: block;
+      width: px(4);
+      height: px(18);
+      background-color: #4fafff;
+      border-radius: 2px;
+      margin-right: px(12);
+    }
+  }
+  & > .cont {
+    background-color: #fff;
+    box-shadow: 0 1px 6px 0 rgba(244, 244, 244, 0.5);
+    border-radius: 5px;
+    padding: px(15);
+  }
+}
+
+.Item {
+  display: flex;
+  justify-content: space-between;
+  font-size: px(14);
+  margin-bottom: px(10);
+  &:last-child {
+    margin-bottom: 0;
+  }
+  .title {
+    color: #666666;
+  }
+  .cont {
+    color: #333333;
+    max-width: px(240);
+    word-break: break-all;
+  }
+}
+
+.repot {
+  .title {
+    font-size: 16px;
+    color: #333333;
+    font-weight: bolder;
+  }
+  .cont {
+    font-size: px(14);
+    color: #999999;
+  }
+}
+
+.imageBox {
+  word-break: break-all;
+  width: px(330);
+  .cover {
+    display: inline-block;
+    margin-bottom: px(8);
+    margin-right: px(8);
+    width: px(100);
+    height: px(100);
+    background-color: #f5f5f5;
+    text-align: left;
+    .strbox {
+      font-size: px(14);
+      color: #666666;
+      margin: px(10);
+      @include fs_overflow(3);
+      word-break: break-all;
+    }
+  }
+}
+
+.timeStep {
+  text-align: right;
+  .Item {
+    color: #333333;
+    max-width: px(230);
+    display: block;
+    position: relative;
+    padding-right: px(24);
+    padding-bottom: px(20);
+    border-right: px(1) solid #e3e3e3;
+    margin-right: px(10);
+    margin-bottom: 0;
+    &:last-child {
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: px(1);
+        height: px(50);
+        background-color: #fff;
+        right: px(-1);
+        top: px(12);
+      }
+    }
+    .label {
+      font-size: px(14);
+      width: 100%;
+      @include fs_overflow(1);
+    }
+    .time {
+      font-size: px(12);
+      width: 100%;
+      @include fs_overflow(1);
+      margin-top: px(4);
+    }
+    .dotIcon {
+      position: absolute;
+      right: px(-10);
+      top: px(-2);
+      width: px(20);
+      height: px(20);
+    }
+    .dot {
+      position: absolute;
+      right: px(-6);
+      top: px(2);
+      width: px(10);
+      height: px(10);
+      background-color: #ccc;
+      border-radius: px(100);
+    }
+    &.not {
+      color: #999999;
+    }
+  }
+}

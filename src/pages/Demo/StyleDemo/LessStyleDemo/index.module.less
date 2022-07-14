@@ -1,0 +1,58 @@
+/*
+* @LastEditors: Mark
+* @Description: none
+* @Author: Mark
+* @Date: 2019-05-05 11:53:31
+* @LastEditTime: 2019-05-13 18:56:44
+ */
+@import '~@/assets/style/resize.less';
+
+.cover {
+  .w(100);
+  .h(100);
+  .border(10, solid, #000);
+  background-image: url('~@/assets/image/15.jpg');
+}
+
+.lessBox {
+  color: red;
+  .font {
+    .fs(16);
+  }
+}
+
+.fontOverflow() {
+  .w(100);
+}
+.fontOverflow_1 {
+  .fontOverflow();
+  .fs_overflow(3);
+}
+
+.fontOverflow_multi {
+  .fontOverflow();
+  .fs_overflow();
+  position: fixed;
+  .t(0);
+}
+
+.magin {
+  .w(200);
+  .h(200);
+  background-color: red;
+}
+.margin_1 {
+  .magin();
+  .m(100, auto);
+}
+
+.margin_2 {
+  .magin();
+  .m(100, 10);
+  .radius(10);
+}
+
+.padding {
+  // .p(20);
+  .p(30, 20, 10, 5);
+}

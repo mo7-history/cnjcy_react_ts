@@ -1,0 +1,96 @@
+<!--
+ * @LastEditors: Mark
+ * @Description: In User Settings Edit
+ * @Author: Mark
+ * @Date: 2019-04-08 11:33:38
+ * @LastEditTime: 2019-06-20 19:05:30
+ -->
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,shrink-to-fit=no"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <script src="//res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
+    <title>长宁检察院</title>
+    <script>
+      //兼容 ie9
+      if (window["context"] == undefined) {
+        if (!window.location.origin) {
+          window.location.origin =
+            window.location.protocol +
+            "//" +
+            window.location.hostname +
+            (window.location.port ? ":" + window.location.port : "");
+        }
+        window["context"] = location.origin + "/V6.0";
+      }
+      //兼容 ie9 === end
+    </script>
+    <script
+      charset="utf-8"
+      src="//map.qq.com/api/js?v=2.exp&key=WWLBZ-EMJEI-OBKGG-5TQ3V-HLG2Z-PKBI5"
+    ></script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript> 您需要启用JavaScript来运行这个应用程序。 </noscript>
+    <div id="root">
+      <div id="load_public_icon">
+        <style type="text/css">
+          #load_public_icon {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            margin-left: -15px;
+            margin-top: -15px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 5px solid #bebebe;
+            border-left: 5px solid #498aca;
+            animation: load 1s linear infinite;
+            -moz-animation: load 1s linear infinite;
+            -webkit-animation: load 1s linear infinite;
+            -o-animation: load 1s linear infinite;
+          }
+          @-webkit-keyframes load {
+            from {
+              -webkit-transform: rotate(0deg);
+            }
+            to {
+              -webkit-transform: rotate(360deg);
+            }
+          }
+          @-moz-keyframes load {
+            from {
+              -moz-transform: rotate(0deg);
+            }
+            to {
+              -moz-transform: rotate(360deg);
+            }
+          }
+          @-o-keyframes load {
+            from {
+              -o-transform: rotate(0deg);
+            }
+            to {
+              -o-transform: rotate(360deg);
+            }
+          }
+        </style>
+      </div>
+    </div>
+  </body>
+</html>

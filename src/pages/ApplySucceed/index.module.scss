@@ -1,0 +1,26 @@
+@import "~@/assets/style/global.scss";
+
+.wrapper {
+  // background-color: #f3f3f3;
+  color: #444444;
+}
+.icon {
+  display: block;
+  margin: 0 auto;
+  width: px(60);
+  height: px(60);
+  margin-top: px(50);
+}
+.hint {
+  text-align: center;
+  font-size: px(14);
+  color: #333333;
+  margin-top: px(20);
+}
+.link {
+  display: block;
+  margin-top: px(109);
+  font-size: 16px;
+  color: #4fafff;
+  text-align: center;
+}

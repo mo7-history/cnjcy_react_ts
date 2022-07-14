@@ -1,0 +1,36 @@
+/*
+* @LastEditors: Mark
+* @Description: less单位转换函数
+* @Author: Mark
+* @Date: 2019-05-05 11:53:31
+* @LastEditTime: 2019-05-25 15:05:59
+ */
+@charset 'utf-8';
+$htmlFontSize: 100px;
+
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}
+
+@function px($values...) {
+  $max: length($values);
+  $remValues: "";
+  @for $i from 1 through $max {
+    $item: strip-units(nth($values, $i)) / strip-units($htmlFontSize) * 1rem;
+    $remValues: #{$remValues + " " + $item};
+  }
+  @return $remValues;
+}
+
+@mixin fs_overflow($num: 1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  @if $num > 1 {
+    display: -webkit-box;
+    -webkit-line-clamp: $num;
+    /* autoprefixer: ignore next */
+    -webkit-box-orient: vertical;
+  } @else {
+    white-space: nowrap;
+  }
+}

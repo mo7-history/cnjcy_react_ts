@@ -1,0 +1,108 @@
+@import "~@/assets/style/global.scss";
+
+.wrapper {
+  background-color: #f3f3f3;
+  color: #444444;
+}
+
+.pageHint {
+  padding: px(15) px(10);
+  .icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: px(12);
+    height: px(12);
+    margin-right: px(5);
+  }
+  font-size: px(12);
+  color: #999999;
+}
+
+.inputBox {
+  margin-bottom: px(10);
+  background-color: #fff;
+
+  .reIcon {
+    color: #cf161b;
+    font-weight: bolder;
+    font-size: px(18);
+    margin-right: px(5);
+  }
+
+  .title {
+    font-size: 16px;
+    color: #444444;
+    padding: px(10) px(15);
+    height: px(50);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .right {
+      color: #4fafff;
+      .ctx {
+        color: #999999;
+      }
+    }
+    .left {
+      display: flex;
+      .err {
+        color: #cf161b;
+        margin-left: px(38);
+      }
+    }
+  }
+  .boreTop {
+    border-top: px(1) solid #e3e3e3;
+  }
+  .content {
+    padding: px(10) px(15);
+  }
+  .hint {
+    margin-top: px(15);
+    margin-top: px(5);
+    font-size: px(14);
+    color: #999999;
+  }
+}
+
+.submit {
+  background-color: #2a8aff;
+  border-radius: px(100);
+  width: px(305);
+  height: px(52);
+  color: #fff;
+  text-align: center;
+  line-height: px(52);
+
+  margin: 0 auto;
+  margin-top: px(50);
+}
+.pageEnd {
+  padding: px(20);
+}
+.comment {
+  font-size: px(16);
+}
+.input {
+  padding: px(6) 0;
+}
+
+.meetFlag {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .right {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.contactAddress {
+  border-bottom: px(1) solid #e3e3e3;
+}
+
+.showAddress {
+  padding: px(15);
+  @include fs_overflow(1);
+}
