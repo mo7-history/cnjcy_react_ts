@@ -63,7 +63,7 @@
     "@types/react-router-dom": "^4.3.4",
     "@types/store": "^2.0.2",
     "@typescript-eslint/parser": "1.10.2",
-    "axios": "^0.19.0",
+    "axios": "^0.21.2",
     "babel-eslint": "10.0.1",
     "babel-jest": "^24.8.0",
     "babel-loader": "8.0.6",
